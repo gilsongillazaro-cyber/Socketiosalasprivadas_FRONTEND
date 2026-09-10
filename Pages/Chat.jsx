@@ -7,12 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 import { UserSContext } from "../Context/UserSelecionadoContext";
 import { toast } from "react-toastify";
-import {
-  Bell,
-  BellPlus,
-  MessageCircleCheck,
-  TextAlignStart,
-} from "lucide-react";
+import { BellPlus, TextAlignStart } from "lucide-react";
 
 export default function Chat() {
   const [mobile, setMobile] = useState(window.innerWidth <= 768);
@@ -37,7 +32,7 @@ export default function Chat() {
     const nome = localStorage.getItem("nome");
     if (!nome) return navigate("/");
 
-    const socket = io("http://localhost:3000");
+    const socket = io("https://socketiosalasprivadas-backend.onrender.com");
 
     socket.on("connect", () => {
       socketRef.current = socket;

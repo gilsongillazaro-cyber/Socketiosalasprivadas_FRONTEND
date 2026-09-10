@@ -8,7 +8,7 @@ O frontend é responsável pela interface da aplicação, gerenciamento das conv
 
 ## 🌐 Acesso ao projeto
 
-> 🚀 **Site:** [COLOQUE_AQUI_O_LINK_DO_SITE]
+> 🚀 **Site:https://socketiosalasprivadas-frontend.vercel.app/**
 
 ---
 
