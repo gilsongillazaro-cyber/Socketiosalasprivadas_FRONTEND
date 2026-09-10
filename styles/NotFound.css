@@ -1,0 +1,19 @@
+.NotFound {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  text-transform: capitalize;
+}
+.NotFound a {
+  color: lightgray;
+}
+input,
+select,
+textarea,
+button {
+  font-size: 1rem;
+}

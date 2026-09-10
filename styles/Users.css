@@ -1,0 +1,122 @@
+.Users {
+  width: 360px;
+  height: 100vh;
+  background-color: #040424;
+  padding: 2%;
+}
+.Users h1 sub {
+  color: rgb(16, 16, 161);
+}
+.Users input {
+  width: 100%;
+  height: 45px;
+  border-radius: 5pt;
+  padding: 5px;
+  border: none;
+  font-size: 1rem;
+  outline-color: darkblue;
+  background-color: #060641;
+  color: white;
+}
+.Users ul {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: 150px;
+}
+.Users ul::-webkit-scrollbar {
+  background-color: #060641;
+  width: 3px;
+}
+.Users ul::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  cursor: pointer;
+}
+.Users ul li {
+  margin-top: 2%;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  transition: 1s;
+  border-radius: 5pt;
+}
+.Check {
+  padding-left: 4px;
+  border-left: 4px solid blue;
+  background-color: #060641;
+}
+.Users ul li div {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.Users ul li div h4 {
+  text-transform: capitalize;
+}
+.Users ul li div h4,
+.Users ul li div p {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.Users ul li:hover {
+  background-color: #060641;
+}
+
+.Users ul li img {
+  background: linear-gradient(90deg, #040424 25%, #060641 50%, #040424 75%);
+  border-radius: 50%;
+  background-size: 500% 100%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  animation: ProcessarImagem 1.3s linear infinite;
+  outline: none;
+  border: none;
+}
+.bola {
+  border-radius: 50%;
+  background-color: blue;
+  height: 20px;
+  width: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+@keyframes ProcessarImagem {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .Users {
+    width: 100%;
+  }
+}
+input,
+select,
+textarea,
+button {
+  font-size: 1rem;
+}

@@ -1,0 +1,217 @@
+.Messages {
+  flex: 1;
+  padding: 1%;
+  width: 100%;
+  height: 100dvh;
+  position: relative;
+}
+.Messages header {
+  width: 100%;
+  height: 80px;
+  border-radius: 5pt;
+  padding: 5px;
+  background-color: #040424;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 5px;
+}
+.areaImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+.areaImg img {
+  background: linear-gradient(90deg, #040424 25%, #060641 50%, #040424 75%);
+  border-radius: 50%;
+  background-size: 500% 100%;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  animation: ProcessarImagem 1.3s linear infinite;
+  outline: none;
+  border: none;
+}
+.bolaStatus {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: blue;
+  right: -4%;
+  top: 69%;
+}
+.des h2 {
+  text-transform: capitalize;
+}
+.des {
+  width: 70%;
+  height: 100%;
+}
+.des h2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.Messages header a {
+  color: white;
+  font-family: cursive;
+  transition: 1s;
+}
+.Messages header a:hover {
+  color: blue;
+}
+
+.Messages ul {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  padding-bottom: 25px;
+}
+.Messages ul::-webkit-scrollbar {
+  width: 0;
+}
+.Messages ul li {
+  padding: 15px;
+  min-width: 80px;
+  margin-inline: 10px;
+  max-width: 55%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+.Messages ul li div {
+  width: 100%;
+  text-align: right;
+  color: rgb(139, 139, 139);
+}
+.enviada {
+  align-self: flex-end;
+  color: white;
+  border-radius: 15pt 15pt 0pt 15pt;
+  background-color: darkblue;
+}
+.recebida {
+  align-self: flex-start;
+  color: black;
+  border-radius: 15pt 15pt 15pt 0pt;
+  background-color: white;
+}
+.seta {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.Messages form {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5px;
+}
+.Messages form .emojis {
+  position: absolute;
+  left: 10px;
+  bottom: 100%;
+}
+
+.Messages form textarea {
+  width: 80%;
+  height: 90%;
+  padding: 10px;
+  outline-color: darkblue;
+  background-color: #040424;
+  color: white;
+  border-radius: 10pt;
+}
+.Messages form button {
+  width: 10%;
+  transition: 1s;
+}
+.sem {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.sem img {
+  padding: 20px;
+  width: 50%;
+  object-fit: cover;
+  height: 80%;
+}
+
+.semSms {
+  width: 60%;
+  height: 50%;
+  margin: 10% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-transform: capitalize;
+  border-radius: 25pt;
+  padding: 10px;
+  background-color: #060641;
+}
+.pon {
+  display: flex;
+  gap: 3px;
+}
+.pontinhos {
+  background: blue;
+  box-shadow: 0 0 16px blue;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  animation: ani 1.3s linear infinite alternate;
+}
+@keyframes ani {
+  0% {
+    scale: 0.5;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .semSms {
+    width: 95%;
+  }
+}
+
+@media (max-width: 600px) {
+  .areaImg {
+    width: 60px;
+    height: 60px;
+  }
+  .areaImg img {
+    width: 100%;
+    height: 100%;
+  }
+}
+input,
+select,
+textarea,
+button {
+  font-size: 1rem;
+}
