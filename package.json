@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "dayjs": "^1.11.23",
     "emoji-picker-react": "^4.20.1",
     "lucide-react": "^1.41.0",
