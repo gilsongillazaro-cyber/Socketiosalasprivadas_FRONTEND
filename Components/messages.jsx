@@ -8,11 +8,6 @@ import {
   GitCompare,
   MailWarning,
   MessageCircleX,
-  PenBox,
-  Pencil,
-  PenLine,
-  PenLineIcon,
-  PenTool,
   Send,
   ServerOff,
   X,
@@ -25,6 +20,8 @@ import { UserSContext } from "../Context/UserSelecionadoContext";
 import { Bot, BotOff } from "lucide-react";
 import { toast } from "react-toastify";
 import dayjs from "dayjs";
+
+import image from "../src/assets/ChatGPT Image 6_09_2026, 15_28_04.png";
 
 export default function Messages({
   mobile,
@@ -300,10 +297,7 @@ export default function Messages({
         </div>
       ) : (
         <div className="sem">
-          <img
-            src="../src/assets/ChatGPT Image 6_09_2026, 15_28_04.png"
-            alt=""
-          />
+          <img src={image} alt="" />
           <p>selecine um usuario e inicie uma conversa</p>
         </div>
       )}
