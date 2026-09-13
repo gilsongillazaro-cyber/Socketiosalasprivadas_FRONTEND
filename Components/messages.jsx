@@ -117,7 +117,7 @@ export default function Messages({
 
             <div className="areaImg">
               <img
-                src={`https:robohash.org/${UserSCont.id}`}
+                src={`https://robohash.org/${UserSCont.id}`}
                 alt="foto de perfil"
               />
               {UserSCont?.id !== meuId && (
